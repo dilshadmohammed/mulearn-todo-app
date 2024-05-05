@@ -51,10 +51,8 @@ function Signup({ darkTheme, setDarkTheme }: ThemeState) {
       }
 
     return (
-        <div style={{ backgroundColor: 'light-gray' }} className='h-fit p-5'>
-
-            <div className="bg-[url('banner.jpg')] bg-no-repeat bg-cover h-[18.75rem]"></div>
-            <main className='w-[540px] mx-auto -mt-20' >
+        <div className='h-fit p-5'>
+            <main className='w-[540px] mx-auto mt-32' >
                 <br /><br /><br />
                 <div className='flex justify-between items-center mb-11' >
                     <h1 className='text-white text-6xl tracking-[1.2rem]'>{signUp ? "SIGN UP" : "SIGN IN"}</h1>
