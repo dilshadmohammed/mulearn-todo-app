@@ -78,16 +78,16 @@ function TodoHome({darkTheme,setDarkTheme}:ThemeState) {
     return (
         <div>
 
-            <div className="bg-[url('banner.jpg')] bg-no-repeat bg-cover h-[18.75rem]" ></div>
+            <div className={`banner ${darkTheme ? 'banner-dark':'banner-light'}`} ></div>
             <main className='w-[540px] mx-auto -mt-56'>
                 <div className='flex justify-between items-center mb-11'>
-                    <h1 className='text-white text-6xl tracking-[1.2rem]'>TODO</h1>
+                    <h1 className='text-6xl tracking-[1.2rem]' style={{color:`${darkTheme ? '#3E4A52' : 'white'}`}}>TODO</h1>
                     <div className='inline-flex gap-10'>
 
-                    <div onClick={() => { setDarkTheme(!darkTheme) }} className="w-8 h-8 cursor-pointer">
+                    <div onClick={() => { setDarkTheme(!darkTheme) }} className="w-8 h-8 cursor-pointer" style={{color:`${darkTheme ? '#3E4A52' : 'white'}`}}>
                     {darkTheme ? <Moon/> : <Sun/>}
                     </div>
-                    <div onClick={logOut}><span>Logout</span></div>
+                    <div onClick={logOut} style={{color:`${darkTheme ? '#3E4A52' : 'white'}`}}><span>Logout</span></div>
                     </div>
                     
                 </div>

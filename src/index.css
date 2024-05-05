@@ -15,19 +15,24 @@ html {
     font-size: 62.5%;
   }
   
+  .banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 19rem;
+  }
+  .banner-dark {
+    background-image: url('/public/banner-night.jpg');
+    background-position: center;
+  }
+  .banner-light {
+    background-image: url('/public/banner-light.jpg');
+    background-position: top;
+  }
   body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.8rem;
     @apply bg-main-bg dark:bg-dark-main-bg text-primary-txt dark:text-dark-primary-txt
   }  
-  .cross:hover ~ div .outer-circle {
-    background-image: linear-gradient(
-      to bottom right,
-      hsl(192, 100%, 67%),
-      hsl(280, 87%, 65%)
-    );
-  }
-
 
 
   button {
