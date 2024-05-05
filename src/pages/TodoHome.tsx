@@ -1,4 +1,4 @@
-import React, { FormEvent, KeyboardEventHandler, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { DropResult } from 'react-beautiful-dnd'
 import TodoType from '../components/TodoTypes'
 import { FilterOptions } from '../components/FilterOptions'
@@ -15,7 +15,7 @@ interface ThemeState {
 function TodoHome({darkTheme,setDarkTheme}:ThemeState) {
     const [filter, setFilter] = useState('All')
     const [task, setTask] = useState('')
-    const [userName,setUserName] = useState(() => {
+    const [userName] = useState(() => {
         const user = localStorage.getItem('user');
         return user ? JSON.parse(user) : '';
     })

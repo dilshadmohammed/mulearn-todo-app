@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Cross() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke='url(#gradient)' className="w-10 h-10 m-2">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import Moon from '../components/Moon';
 import Sun from '../components/Sun';
 
@@ -41,6 +41,14 @@ function Signup({ darkTheme, setDarkTheme }: ThemeState) {
         setSignUp(false)
       };
 
+      const handleSubmit = (e:FormEvent) => {
+        e.preventDefault()
+                if(signUp)
+                    signUpHandler()
+                else
+                    signInHandler()
+
+      }
 
     return (
         <div style={{ backgroundColor: 'light-gray' }} className='h-fit p-5'>
@@ -54,7 +62,7 @@ function Signup({ darkTheme, setDarkTheme }: ThemeState) {
                         {darkTheme ? <Moon /> : <Sun />}
                     </div>
                 </div>
-                <div className='flex flex-col mb-5 rounded-md ' >
+                <form className='flex flex-col mb-5 rounded-md ' onSubmit={handleSubmit} >
 
                     <input
                         className='w-full h-16 rounded-md ml-2 outline-none border-none bg-white dark:bg-20242a'
@@ -75,7 +83,7 @@ function Signup({ darkTheme, setDarkTheme }: ThemeState) {
                         title='password'
                         placeholder='password'
                     />
-                </div>
+                </form>
                 <div className='bg-#ffffff dark:bg-20242a rounded-md shadow-lg' style={{ 'backgroundColor': `${darkTheme ? '#20242a' : 'white'}` }}>
 
                 </div>

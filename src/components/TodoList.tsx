@@ -26,7 +26,7 @@ function TodoList({
       <Draggable key={todo._id} draggableId={todo._id.toString()} index={i}>
         {(provided) => (
           <li
-            className='p-5 border-none border-b-[1px] border-solid border-custom-border-color 
+            className='p-5border-b-[1px] border-solid border-custom-border-color 
             dark:border-custom-border-color-dark flex justify-between items-center'
             ref={provided.innerRef}
             {...provided.draggableProps}

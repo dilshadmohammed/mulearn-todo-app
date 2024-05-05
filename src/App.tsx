@@ -8,7 +8,7 @@ function App() {
     const theme = localStorage.getItem('theme');
     return theme ? JSON.parse(theme) : false;
   });
-  const [signedIn, setSignedIn] = useState(() => {
+  const [signedIn] = useState(() => {
     const savedSignedIn = localStorage.getItem('signedIn');
     return savedSignedIn ? JSON.parse(savedSignedIn) : false;
   });
