@@ -139,11 +139,11 @@ function TodoHome({darkTheme,setDarkTheme}:ThemeState) {
                     </footer>
 
                 </div>
-                {/* <div className='text-center mt-10 mb-10 mx-auto text-primary-txt dark:text-dark-primary-txt'>
+                <div className='text-center mt-10 mb-10 mx-auto text-primary-txt dark:text-dark-primary-txt'>
                     <small>
                         Drag and drop to reorder list
                     </small>
-                </div> */}
+                </div>
             </main>
         </div>
     )
