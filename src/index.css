@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+    @apply bg-main-bg dark:bg-dark-main-bg text-primary-txt dark:text-dark-primary-txt
+  }  
+  .cross:hover ~ div .outer-circle {
+    background-image: linear-gradient(
+      to bottom right,
+      hsl(192, 100%, 67%),
+      hsl(280, 87%, 65%)
+    );
+  }
+
+
+
+  button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.4rem;
+    color: var(--btn-text-color);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color: var(--hover-color);
+  }
+  
+  button.active {
+    color: var(--bright-blue);
+  }
+
+  .todos-list {
+    list-style-type: none;
+  }
+
+  .button-box {
+    @apply ml-5 flex gap-5 font-bold
+  }
+
+  .inactive {
+    @apply opacity-50
+  }
