@@ -21,11 +21,11 @@ html {
     height: 19rem;
   }
   .banner-dark {
-    background-image: url('/public/banner-night.jpg');
+    background-image: url('/banner-night.jpg');
     background-position: center;
   }
   .banner-light {
-    background-image: url('/public/banner-light.jpg');
+    background-image: url('/banner-light.jpg');
     background-position: top;
   }
   body {
